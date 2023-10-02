@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container-fluid my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row justify-content-start">
+                    <div class="col-6 col-md-3">
+                    <img src="https://www.snitch.co.in/cdn/shop/files/4MST2068-04-M14884.jpg?v=1686922552&width=1800" alt="" width="100px" height="140px" class="img-fluid">
+                    <br><br>
+                    <img src="https://www.snitch.co.in/cdn/shop/files/4MST2068-04-M14851.jpg?v=1686922552&width=1800" alt="" width="100px" height="140px" class="img-fluid">
+                    <br><br>
+                    <img src="https://www.snitch.co.in/cdn/shop/files/4MST2068-04-M14888.jpg?v=1686922552&width=1800" alt="" width="100px" height="140px" class="img-fluid">
+                    <br><br>
+                    <img src="https://www.snitch.co.in/cdn/shop/files/4MST2068-04-M14866.jpg?v=1686922552&width=1800" alt="" width="100px" height="140px" class="img-fluid">
+                    <br><br>
+                    <img src="https://www.snitch.co.in/cdn/shop/files/4MST2068-04-M14848.jpg?v=1686922552&width=1800" alt="" width="100px" height="140px" class="img-fluid">
+                    <br><br>
+                    <img src="https://www.snitch.co.in/cdn/shop/files/4MST2068-04-M14859.jpg?v=1686922552&width=1800" alt="" width="100px" height="140px" class="img-fluid">
+                    <br><br>
+                    <img src="https://www.snitch.co.in/cdn/shop/files/chemical-free-tag-final_d30913d3-12a5-4980-bcc1-5785f1834377.jpg?v=1686922552&width=1800" alt="" width="100px" height="140px" class="img-fluid">
+                  </div>
+                  <div class="col-6 col-md-9">
+                    <a href="#">
+                      <img src="https://www.snitch.co.in/cdn/shop/files/4MST2068-04-M14884.jpg?v=1686922552&width=1800" alt="" width="450px" height="700px" id="image" onclick="changeimage()" class="img-fluid">
+                    </a>
+                  </div>
+                </div> 
+                </div>
+                <div class="col-md-6 " >
+                    <h1>CANYON WHITE POLO T-SHIRT</h1>
+                    <div class="ratings">
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color"></i>
+                      <i class="fa fa-star rating-color""></i>3 reviews
+                  </div> 
+                    
+                    <p>Rs. 1,499 <br>
+                      (incl. of all taxes)
+                      or 3 monthly payments of ₹500 with
+                      UPI & Cards Accepted, Online approval in 2 minutes</p>
+                      
+                      <p id="text">Flat 15% cashback up to ₹1000.</p>
+                      <p>C O L O R</p>
+                      <button class="btn btn-outline-secondary add-btn">White</button>
+                      <br><br>
+                      <p>S I Z E</p>
+                      
+              <button class="btn btn-outline-secondary add-btn">S</button>
+              <button class="btn btn-outline-secondary add-btn">M</button>
+              <button class="btn btn-outline-secondary add-btn">L</button>
+              <button class="btn btn-outline-secondary add-btn">XL</button>
+              <button class="btn btn-outline-secondary add-btn">XXL</button>
+              <br><br>
+              <label for="quantity">Q U A N T I T Y</label>
+              <br><br>
+                  <div class="quantity-input" >
+                      <button class="button" id="decrement" onclick="decrementQuantity()">-</button>
+                      <input type="text" id="quantity" value="1" min="1" class="button">
+                      <button class="button id="increment" onclick="incrementQuantity()">+</button>
+                  </div>
+                  <br>
+                 
+  
+        <div class="dropdown">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" id="emi">
+                E M I / P A Y  I N  3  O F F E R S
+            </button>
+            <ul class="dropdown-menu" id="emi" >
+                <li ><a class="dropdown-item" href="#" >Or 3 interest-free payments of ₹399.68</a></li>
+            </ul>
+        </div>
+        
+        <div class="dropdown">
+            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" id="emi">
+                O F F E R S   F O R  Y O U
+            </button>
+            <ul class="dropdown-menu" id="offer">
+                <li><a class="dropdown-item" href="#">BUY 2 GET 10% OFF<br>Use Code: DEAL10</a></li>
+                <li><a class="dropdown-item" href="#">BUY 5 GET 15% OFF<br>Use Code: DEAL15</a></li>
+                <li><a class="dropdown-item" href="#">BUY 7 GET 20% OFF<br>Use Code: DEAL20</a></li>
+            </ul>
+        </div>
+        <br><br><br>
+   
+        
+        <button type="button" class="btn btn-dark" id="showOffcanvas">A D D  T O  C A R T</button>
+        <br><br>
+        <button type="button" class="btn btn-light" id="btn2">&heartsuit;<span id="text"> Add to Wishlist</span></button>
+        <hr>
+        <button type="button" class="btn btn-light" id="btn3">Delivered by and COD Checker</button>
+        <br><br>
+        <div class="input-group">
+            <input type="text" id="pincodeinput" class="form-control" placeholder="Enter pincode">
+            <button class="btn btn-dark" type="submit" id="pincode">CHECK</button>
+        </div>
+  
+ 
+  <br><br>
+  <h6>PRODUCT DESCRIPTION</h6>
+  <ul>
+        <li>Half Sleeves</li>
+    <li>Spread Collar</li>
+    <li>Soft Rib-Knit Cotton Blend </li>
+    <li>Comfort Stretch </li>
+      </ul> 
+      <h6 style="display: inline-block;">FABRIC:  </h6><span>  100% Cotton ( Natural Stretch )</span>
+      <br><br>
+      <h6 style="display: inline-block;">FIT:</h6><span>Slim fit</span>
+      <br><br>
+      <h6 style="display: inline-block;">Model Height: </h6><span>6 feet</span>
+      <br><br>
+      <h6 style="display: inline-block;">WASH CARE: </h6><span>Cold machine wash. For more details see the wash care label attached</span>
+        <br><br>
+        <h2>WE RECOMMEND ONE SIZE BIGGER THAN YOUR ACTUAL SIZE </h2>
+        <p>Actual colour of the product may vary slightly from the image </p>
+        <p style="text-align: center;">T-shirt Size Guide</p>
+        <div class="table-responsive">
+          <table class="table table-bordered border-dark" id="table">
+            <tr>
+              <th>SIZE</th>
+              <th>CHEST</th>
+              <th>SHOULDER</th>
+              <th>LENGTH</th>
+            </tr>
+            <tr>
+              <td>S</td>
+              <td>36</td>
+              <td>16</td>
+              <td>26</td>
+            </tr>
+            <tr>
+              <td>M</td>
+              <td>38</td>
+              <td>16.5</td>
+              <td>27</td>
+            </tr>
+            <tr>
+              <td>L</td>
+              <td>40</td>
+              <td>17</td>
+              <td>27.5</td>
+            </tr>
+            <tr>
+              <td>XL</td>
+              <td>42</td>
+              <td>17.5</td>
+              <td>29</td>
+    
+            </tr>
+            <tr>
+              <td>XXL</td>
+              <td>44</td>
+              <td>18</td>
+              <td>30</td>
+    
+    
+            </tr>
+          </table>
+</div>
+              
+<p>Model is wearing M Size. Model height 6 FT. If your measurements fall between sizes, we suggest that you size up for a better fit</p>
+    </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <th><button type="button" class="btn btn-light">Manufactured & Marketed By:</button></th>
+                    <th><button type="button" class="btn btn-light">Returns Policy</button></th>
+                    <th><button type="button" class="btn btn-light" id="tab">Place Return Request</button></th>
+                </tr>
+                <tr>
+                    <td>
+                        <h6>Manufactured & Marketed By:</h6>
+                        Snitch Apparels Pvt. Ltd.
+                        No.5/1,3rd Floor, Surana Arcade, 4th Cross, Lalbagh Road, K.S.Garden, Bangalore-560027
+                        <br><br>
+                        <h6>Country of Origin:</h6>
+                        India
+                    </td>
+                    <td>
+                        <p>We offer 7 days hassle-free returns. Return Policies may vary based on products and promotions.
+                            <br>
+                            1) Refunds for Prepaid orders would directly be initiated to the source account, and COD orders will be refunded in the form of COUPON CODE ONLY
+                            <br>
+                            2) Defective Products, Wrong Products, or Damaged Products issues should be raised within 24 hrs of delivery
+                            <br>
+                            3) All Orders wherein FREE Products are included are not eligible for Return
+                            For more details on our Returns Policies, please <a href="#">click here․</a></p>
+                    </td>
+                    <td>
+                        <p>To place any Returns Request, <a href="#">click here.</a></p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+
+
+
+    <br>
+    <hr>
+
+    <center><h4>RECENTLY VIEWED</h4></center>
+    <div class="container mt-4">
+    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 row-cols-lg-4">
+      <div class="col mb-4">
+          <a href="#">
+              <img src="https://www.snitch.co.in/cdn/shop/files/4MSR5039-04-329.jpg?v=1695706696&width=1800" alt="" class="img-fluid">
+          </a>
+          <p class="text-center">Everett Olive Cargo Pant</p>
+      </div>
+      <div class="col mb-4">
+          <a href="#">
+              <img src="https://www.snitch.co.in/cdn/shop/products/Lazar_Oct16078.jpg?v=1676639941&width=1800" alt="" class="img-fluid">
+          </a>
+          <p class="text-center">Abstratct Circle Maroon Shirt</p>
+      </div>
+      <div class="col mb-4">
+          <a href="#">
+              <img src="https://www.snitch.co.in/cdn/shop/products/Snitch_29thNov22_57656.jpg?v=1670846856" alt="" class="img-fluid">
+          </a>
+          <p class="text-center">Cut Leaf Black Shirt</p>
+      </div>
+      <div class="col mb-4">
+          <a href="#">
+              <img src="https://www.snitch.co.in/cdn/shop/products/SNITCH-JUNE1503.jpg?v=1655120022" alt="" class="img-fluid">
+          </a>
+          <p class="text-center">Aster White Shirt</p>
+      </div>
+  </div>
+    </div>
+      <!-- rating part -->
+
+      <div class="container shadow mt-5 p-4">
+        <h4 class="text-center">PRODUCT REVIEWS</h4>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color""></i>
+            </div>
+            <p class="mt-2">5.00 out of 5
+              Based on 11 reviews
+            </p>
+        </div>
+         
+          <div class="col-md-6">
+            <div class="row">
+                <div class="col star">
+            <div class="small-ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+            
+        </div>
+        
+        <div class="small-ratings">
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star rating-color"></i>
+            <i class="fa fa-star"></i>
+        </div>
+  
+    <div class="small-ratings">
+        <i class="fa fa-star rating-color"></i>
+        <i class="fa fa-star rating-color"></i>
+        <i class="fa fa-star rating-color"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+    </div>
+
+<div class="small-ratings">
+    <i class="fa fa-star rating-color"></i>
+    <i class="fa fa-star rating-color"></i>
+    <i class="fa fa-star "></i>
+    <i class="fa fa-star "></i>
+    <i class="fa fa-star "></i>
+
+
+<div class="small-ratings">
+    <i class="fa fa-star rating-color"></i>
+    <i class="fa fa-star "></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+</div>
+</div>
+   </div>
+    <div class="col review">
+        <div class="bg-warning mb-2" id="box"></div>
+        <div class="bg-color mb-2" id="box"></div>
+        <div class="bg-color mb-2" id="box"></div>
+        <div class="bg-color mb-2" id="box"></div>
+        <div class="bg-color mb-2" id="box"></div>
+
+    </div>
+        </div>
+        </div>
+      </div>
+        </div> 
+    </div>
+    
+    <!-- end of rating part  -->
+    <div class="dropdown my-4 mx-3" id="down">
+        <button class="shadow dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="down">
+          Highest rating
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Most Recent</a></li>
+          <li><a class="dropdown-item" href="#">Highest Rating</a></li>
+          <li><a class="dropdown-item" href="#">Lowest Rating</a></li>
+          <li><a class="dropdown-item" href="#">Only Pictures</a></li>
+          <li><a class="dropdown-item" href="#">Pictures First</a></li>
+          <li><a class="dropdown-item" href="#">Videos First</a></li>
+          <li><a class="dropdown-item" href="#">Most helpful</a></li>
+        </ul>
+      </div>
+      <!-- card  -->
+      <div class="container mt-5">
+        <div class="row">
+            <!-- First Card -->
+            <div class="col-md-4">
+                <div class="card shadow ">
+                  <div class="small-ratings">
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    <i class="fa fa-star rating-color"></i>
+                    
+                </div>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="yellow" class="bi bi-person-check" viewBox="0 0 16 16">
+                  <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+                  <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"/>
+                </svg>
+                <p id="text">Harish Raj</p>
+                <p>Canyon White Polo T-Shirt</p>
+                </div>
+              </div>
+      
+                   <!-- Second Card -->
+            <div class="col-md-4">
+              <div class="card shadow">
+                <div class="small-ratings">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  
+              </div>
+              
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="yellow" class="bi bi-person-check" viewBox="0 0 16 16">
+                <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+                <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"/>
+              </svg>
+              <p id="text">Vadloori</p>
+              <p>Canyon White Polo T-Shirt</p>
+              </div>
+            </div>
+             <!-- Third Card -->
+             <div class="col-md-4">
+              <div class="card shadow">
+                <div class="small-ratings">
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  <i class="fa fa-star rating-color"></i>
+                  
+              </div>
+              
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="yellow" class="bi bi-person-check" viewBox="0 0 16 16">
+                <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+                <path d="M8.256 14a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1h5.256Z"/>
+              </svg>
+              <p id="text">Sanjay narvekar</p>
+              <p>Canyon White Polo T-Shirt</p>
+              </div>
+             </div>
+        </div>
+
+   
+
+              <!--------------- cartpage offcanvas ----------------- -->
+
+
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="myOffcanvas">
+    
+    <div class="offcanvas-header">
+        <h1 class="offcanvas-title">CART</h1>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <!-- Content goes here -->
+       
+        <div class="row">
+          <div class="col">
+            
+            <img src="https://www.snitch.co.in/cdn/shop/files/4MST2068-04-M14884.jpg?v=1686922552&width=540" width="100px" height="150px">
+        
+          </div>
+          <div class="col">
+           
+            <p>Canyon White Polo T-shirt</p>
+            <h6 style="display: inline-block;">Color :</h6><span>White</span>
+            <br>
+            <h6 style="display: inline-block;">Size :</h6><span>S</span>
+            <br>
+            <label for="quantity">Q U A N T I T Y</label>
+            <br><br>
+                <div class="quantity-input" >
+                    <button class="button" id="decrement" onclick="decrement()">-</button>
+                    <input type="text" id="qty" value="1" min="1" class="button">
+                    <button class="button id="increment" onclick="increment()">+</button>
+               
+            </div>
+                <br>
+          </div>
+          <div class="col d-flex flex-column">
+            <div class="mb-auto"></div>
+            Rs. 1,199
+          </div>
+        </div>
+
+        
+        <div class="container pt-4">
+            
+            <hr>
+            
+            <div class="row pt-4">
+              <div class="col">
+                S U B T O T A L 
+              </div>
+              <div class="col">
+                
+              </div>
+              <div class="col">
+                Rs. 8,393
+              </div>
+            </div>
+            <br><br>
+            <p class="text-center">Shipping, taxes, and discount codes calculated at checkout.</p>
+            <button type="button" id="cartbtn">PLACE ORDER 
+                <br>
+                UPI/COD/PAY IN 3
+            </button>
+            <br><br>
+            <button type="button" id="cartbtn">PROCEED TO Checkout
+                <br>
+                Save Rs 100 on prepaid orders
+            </button>
+        </div></div></div>
+
+
+    </div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
